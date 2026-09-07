@@ -8,12 +8,12 @@
 			{
 				"windows"
 				{
-					"signature"		"m_iRadioMessages = 60" // C7 80 68 12 00 00 3C 00 00 00  | mov  dword ptr [eax+1268h], 60
-					"offset"		"6"                     //                   ^^ ^^ ^^ ^^  = sig + 6 = address of int put into m_iRadioMessages
+					"signature"		"m_iRadioMessages = ..." // C7 80 68 12 00 00 3C 00 00 00  | mov  dword ptr [eax+1268h], 60
+					"offset"		"6"                      //                   ^^ ^^ ^^ ^^  = sig + 6 = address of int put into m_iRadioMessages
 				}
 				"linux"
 				{
-					"signature"		"m_iRadioMessages = 60"
+					"signature"		"m_iRadioMessages = ..."
 					"offset"		"6"
 				}
 			}
@@ -22,7 +22,7 @@
 		"Signatures"
 		{
             //"The Navigation Mesh was built using a different version of this map." in CCSPlayer::Spawn
-            "m_iRadioMessages = 60"
+            "m_iRadioMessages = ..."
             {
                 "library"       "server"
                 "windows"       "\xC7\x80\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x8B\x4D\xF8\x8B\x15\x2A\x2A\x2A\x2A\xD9\x42" 
